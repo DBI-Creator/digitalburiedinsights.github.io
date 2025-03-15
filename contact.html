@@ -9,10 +9,37 @@
 <body>
     <header>
         <h1>Contact Us</h1>
-        <p>Get in touch for project inquiries.</p>
+        <p>We’d love to hear from you! Reach out via email, phone, or the form below.</p>
     </header>
+
     <nav>
         <a href="index.html">Back to Home</a>
     </nav>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        
+        <p><strong>Email:</strong> <a href="mailto:BrandonValdez@digitalburiedinsights.com">BrandonValdez@digitalburiedinsights.com</a></p>
+        <p><strong>Phone:</strong> (Your Business Phone)</p>
+        <p><strong>Address:</strong> (Your Business Address, if applicable)</p>
+
+        <h3>Send Us a Message</h3>
+        <form action="mailto:BrandonValdez@digitalburiedinsights.com" method="post" enctype="text/plain">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Digital Buried Insights</p>
+    </footer>
 </body>
 </html>

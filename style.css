@@ -9,7 +9,8 @@ header {
     background-size: contain;      /* Ensures the entire logo is visible */
     background-position: center;   /* Centers the logo within the header */
     background-repeat: no-repeat;  /* Prevents the image from repeating */
-    min-height: 150px;             /* Adjust this value to match a normal header height */
+    min-height: 150px;
+    max-height: 200px/* Adjust this value to match a normal header height */
     padding: 20px;                 /* Adds space around the content */
     text-align: center;
     color: white;

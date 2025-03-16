@@ -1,23 +1,33 @@
+/* Define CSS variables for consistent colors and fonts */
+:root {
+    --primary-color: #007BFF;
+    --primary-dark: #0056b3;
+    --background-dark: #333;
+    --background-light: #f8f9fa;
+    --font-family: 'Open Sans', sans-serif;
+}
+
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-family);
     text-align: center;
     margin: 0;
     padding: 0;
+    background-color: #fff;
+    color: #333;
 }
 
 /* Header */
-/* Header styling with logo positioned on the left */
 header {
     display: flex;
     align-items: center;
-    background-color: #333;  /* Fallback background color */
+    background-color: var(--background-dark);
     padding: 20px;
     color: white;
 }
 
 .logo {
-    max-width: 150px;       /* Adjust as needed */
+    max-width: 150px;
     margin-right: 20px;
 }
 
@@ -28,37 +38,46 @@ header {
 
 .header-text h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .header-text p {
-    margin: 5px 0 0 0;
+    margin: 5px 0 0;
     font-size: 1.2rem;
+    opacity: 0.9;
 }
 
 /* Navigation */
 nav {
-    background-color: #333; /* Optional: adds a background to the nav */
+    background-color: var(--background-dark);
+    padding: 10px 0;
 }
+
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;               /* Horizontal layout */
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
+
 nav ul li {
     margin: 0 15px;
 }
+
 nav ul li a {
     text-decoration: none;
-    color: #007BFF;
+    color: var(--primary-color);
     font-weight: bold;
-    padding: 10px;
-    transition: background 0.3s;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
 }
+
 nav ul li a:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-dark);
+    color: white;
     border-radius: 5px;
 }
 
@@ -67,20 +86,17 @@ section {
     margin: 30px auto;
     padding: 20px;
     max-width: 800px;
-    background-color: #f8f9fa;
+    background-color: var(--background-light);
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: var(--background-dark);
     color: white;
     padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    text-align: center;
 }
 
 /* Buttons */
@@ -91,20 +107,22 @@ button {
     padding: 15px;
     font-size: 18px;
     color: white;
-    background-color: #007BFF;
+    background-color: var(--primary-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
 }
+
 button:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-dark);
 }
 
 /* Forms */
 form {
     margin-top: 20px;
 }
+
 form input, form textarea {
     width: 90%;
     padding: 10px;
@@ -112,15 +130,17 @@ form input, form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 form input[type="submit"] {
-    background-color: #007BFF;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     cursor: pointer;
     transition: background 0.3s;
 }
+
 form input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-dark);
 }
 
 /* Responsive Styles */
@@ -132,11 +152,10 @@ form input[type="submit"]:hover {
         flex-direction: column;
     }
     nav ul li {
-        margin-bottom: 10px;
+        margin: 10px 0;
     }
     section {
         width: 90%;
-        margin: auto;
     }
     button {
         width: 100%;

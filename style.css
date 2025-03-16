@@ -5,12 +5,11 @@ body {
     padding: 0;
 }
 header {
-    background-image: url('logo.png'); /* Use the logo as a background */
-    background-size: contain; /* Ensure the logo fits within the header */
-    background-position: center; /* Center the logo */
-    background-repeat: no-repeat; /* Prevent repeating */
+    background-image: url('logo.png');
+    background-size: cover;      /* Stretches the image to cover the header */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;/* Prevents the image from repeating */
     text-align: center;
-    background-color: #333; /* Fallback background color */
     color: white;
     padding: 40px;
 }

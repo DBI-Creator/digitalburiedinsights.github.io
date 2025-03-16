@@ -12,8 +12,8 @@ header {
     text-align: center;
     color: white;
     padding: 40px;
-    min-height: 100px; /* Adjust height as needed */
-    min-length: 500px;
+    min-height: 30px; /* Adjust height as needed */
+    min-length: 25000px;
 }
 nav ul {
     list-style-type: none;

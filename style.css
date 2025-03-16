@@ -13,7 +13,7 @@ header {
     color: white;
     padding: 40px;
     min-height: 100px; /* Adjust height as needed */
-    min-length: 2500px;
+    min-length: 500px;
 }
 nav ul {
     list-style-type: none;

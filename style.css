@@ -5,9 +5,14 @@ body {
     padding: 0;
 }
 header {
-    background-color: #333;
+    background-image: url('logo.png'); /* Use the logo as a background */
+    background-size: contain; /* Ensure the logo fits within the header */
+    background-position: center; /* Center the logo */
+    background-repeat: no-repeat; /* Prevent repeating */
+    text-align: center;
+    background-color: #333; /* Fallback background color */
     color: white;
-    padding: 20px;
+    padding: 40px;
 }
 nav ul {
     list-style-type: none;

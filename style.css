@@ -1,38 +1,62 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
 }
+
+/* Header */
 header {
     background-image: url('logo.png');
-    background-size: contain;      /* Ensures the entire logo is visible */
-    background-position: center;   /* Centers the logo within the header */
-    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-size: contain;      /* Keeps the entire logo visible */
+    background-position: center;   /* Centers the logo */
+    background-repeat: no-repeat;  /* Prevents repetition */
     min-height: 300px;
     max-height: 500px;
-    min-length: 3500px;
-    max-length: 3600px;/* Adjust this value to match a normal header height */
-    padding: 20px;                 /* Adds space around the content */
-    text-align: center;
+    padding: 20px;
     color: white;
-    background-color: #333;        /* Fallback color in case the image doesn't load */
+    background-color: #333;        /* Fallback color */
+}
+
+/* Navigation */
+nav {
+    background-color: #333; /* Optional: adds a background to the nav */
 }
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;               /* Horizontal layout */
+    justify-content: center;
 }
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 nav ul li a {
     text-decoration: none;
     color: #007BFF;
+    font-weight: bold;
+    padding: 10px;
+    transition: background 0.3s;
 }
+nav ul li a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Sections */
 section {
-    margin: 20px;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -41,6 +65,8 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Buttons */
 button {
     display: block;
     width: 80%;
@@ -52,38 +78,13 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-align: center;
-}
-button:hover {
-    background-color: #0056b3;
-}
-section {
-    margin: 30px auto;
-    padding: 20px;
-    max-width: 800px;
-    text-align: center;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-button {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    padding: 15px;
-    font-size: 18px;
-    color: white;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
+    transition: background 0.3s;
 }
 button:hover {
     background-color: #0056b3;
 }
 
+/* Forms */
 form {
     margin-top: 20px;
 }
@@ -99,17 +100,19 @@ form input[type="submit"] {
     color: white;
     border: none;
     cursor: pointer;
+    transition: background 0.3s;
 }
 form input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
     body {
         font-size: 16px;
     }
     nav ul {
         flex-direction: column;
-        text-align: center;
     }
     nav ul li {
         margin-bottom: 10px;
